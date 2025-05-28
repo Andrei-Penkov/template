@@ -48,11 +48,7 @@
     font-size: 1.4rem;
     margin-bottom: 15px;
 }
-.artist-item img {
-    max-width: 150px; /* Пример */
-    height: auto;
-    display: block; /* Важно! */
-}
+
 .artist-list,
 .album-list,
 .track-list {

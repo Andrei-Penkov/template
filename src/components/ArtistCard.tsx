@@ -19,4 +19,4 @@ const ArtistCard: React.FC<ArtistCardProps> = ({ artist }) => {
   );
 };
 
-export default ArtistCard;
+export default ArtistCard;0
