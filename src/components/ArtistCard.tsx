@@ -18,5 +18,4 @@ const ArtistCard: React.FC<ArtistCardProps> = ({ artist }) => {
     </div>
   );
 };
-
-export default ArtistCard;0
+export default ArtistCard;

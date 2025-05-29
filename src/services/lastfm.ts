@@ -4,15 +4,6 @@ import { Track } from '../types/Track';
 
 const API_KEY = "2467e45594a2085cd6fbcdb081b93c5f";
 
-const createApiUrl = (method: string, params: Record<string, string>) => {
-  const urlParams = new URLSearchParams({
-    api_key: API_KEY,
-    format: 'json',
-    method: method,
-    ...params,
-  });
-  return `http://ws.audioscrobbler.com/2.0/?${urlParams.toString()}`;
-};
 
 export const searchArtists = async (searchTerm: string): Promise<Artist[]> => {
   const url = `http://ws.audioscrobbler.com/2.0/?method=artist.search&artist=${encodeURIComponent(searchTerm)}&api_key=${API_KEY}&format=json`;
