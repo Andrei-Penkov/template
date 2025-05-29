@@ -1,37 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <header>
+        <div class="container">
+            <div class="player">
+                <span class="player-button"><i class="icon-prev"></i></span>
+                <span class="player-button"><i class="icon-play"></i></span>
+                <span class="player-button"><i class="icon-next"></i></span>
+            </div>
+            <div class="logo">
+                <img src="f.jpg" alt="Last.fm">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Live</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Charts</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Features</a></li>
+                </ul>
+            </nav>
+            <!-- <div class="search-form">
+                <input type="search" placeholder="Search">
+                <button type="submit"><i class="icon-search"></i></button>
+            </div> -->
+        </div>
+    </header>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <main>
+        <div class="container">
+            <div id="root"></div>
+        </div>
+    </main>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <section class="company">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Last.fm</a></li>
+                        <li><a href="#">Contact Us</a></li>                        
+                        <li><a href="#">Jobs</a></li>
+                    </ul>
+                </section>
+
+                <section class="help">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Track My Music</a></li>
+                        <li><a href="#">Community Support</a></li>                        
+                        <li><a href="#">Community Guidelines</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </section>
+
+                <section class="goodies">
+                    <h3>Goodies</h3>
+                    <ul>
+                        <li><a href="#">Download Scrobbler</a></li>                        
+                        <li><a href="#">Developer API</a></li>
+                        <li><a href="#">Free Music Downloads</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                    </ul>
+                </section>
+
+                <section class="account">
+                    <h3>Account</h3>
+                    <ul>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Last.fm Pro</a></li>                        
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </section>
+
+                <section class="follow">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>                        
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="footer-bottom">
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
